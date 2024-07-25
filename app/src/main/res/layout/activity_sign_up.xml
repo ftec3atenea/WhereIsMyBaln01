@@ -5,21 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SignUp">
 
     <ImageView
         android:id="@+id/fondo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/fondeu"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondeu" />
 
     <TextView
-        android:id="@+id/titulo1"
+        android:id="@+id/titulo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿Dónde está mi balneario?"
@@ -29,68 +29,93 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/input_user1"
+        android:id="@+id/input_user2"
         style="@style/sty_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Ingrese su Usuario"
+        android:hint="Escriba su Usuario"
         android:inputType="text"
-        android:layout_marginTop="100sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo1" />
-
-    <EditText
-        android:id="@+id/input_pass1"
-        style="@style/sty_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Ingrese su Pass"
-        android:inputType="textPassword"
         android:layout_marginTop="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_user1" />
+        app:layout_constraintTop_toBottomOf="@+id/titulo2" />
+
+    <EditText
+        android:id="@+id/input_email2"
+        style="@style/sty_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Escriba su correo"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/input_user2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_age"
+        style="@style/sty_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Escriba su Edad"
+        android:inputType="number"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_email2" />
+
+    <EditText
+        android:id="@+id/input_pass2"
+        style="@style/sty_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Escriba su Pass"
+        android:inputType="textPassword"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_age" />
+
+    <EditText
+        android:id="@+id/confirm_pass2"
+        style="@style/sty_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Confirme su Pass"
+        android:inputType="textPassword"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_pass2" />
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
-        android:text="¡Empecemos!"
+        android:text="¡Únete!"
+        android:layout_marginTop="30sp"
         android:textColor="@color/black"
         app:cornerRadius="5dp"
-        android:layout_marginTop="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_pass1"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_pass2"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 
     <TextView
-        android:id="@+id/forgot1"
-        style="@style/sty_text_aux"
+        android:id="@+id/ytc2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Has olvidado tu contraseña?"
-        android:layout_marginTop="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
-
-    <TextView
-        android:id="@+id/ntc1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¿No tienes cuenta?"
+        android:text="¿Ya tienes cuenta?"
         style="@style/sty_text_aux"
         android:layout_marginTop="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgot1" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
 
     <TextView
-        android:id="@+id/tdr1"
+        android:id="@+id/tdr2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Todos los derechos reservados GR01"
@@ -98,5 +123,10 @@
         android:layout_margin="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,7 +21,7 @@ public class SplashActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
-        ImageView logo = findViewById(R.id.fondo);
+        ImageView logo = findViewById(R.id.fondo0);
         Animation fadeIn = new AlphaAnimation(0, 1);
         fadeIn.setDuration(2000);
         logo.startAnimation(fadeIn);
