@@ -9,14 +9,10 @@
 
     <ImageView
         android:id="@+id/fondo1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/fondeu"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:srcCompat="@drawable/fondeu" />
 
     <TextView
         android:id="@+id/titulo1"
@@ -28,66 +24,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/input_user1"
-        style="@style/sty_input"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Ingrese su Usuario"
-        android:inputType="text"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="50sp"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo1" />
+        app:layout_constraintTop_toBottomOf="@+id/titulo1">
 
-    <EditText
-        android:id="@+id/input_pass1"
-        style="@style/sty_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Ingrese su Pass"
-        android:inputType="textPassword"
-        android:layout_marginTop="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_user1" />
+        <TextView
+            android:id="@+id/unouno11"
+            style="@style/sty_text_aux"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:text="Ya tienes cuenta," />
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:text="¡Empecemos!"
-        android:textColor="@color/black"
-        app:cornerRadius="5dp"
-        android:layout_marginTop="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_pass1"
-        app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="¡Empecemos!"
+            android:textColor="@color/black"
+            app:cornerRadius="5dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp" />
 
-    <TextView
-        android:id="@+id/forgot1"
-        style="@style/sty_text_aux"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¿Has olvidado tu contraseña?"
-        android:layout_marginTop="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        <TextView
+            android:id="@+id/dosdos22"
+            style="@style/sty_text_aux"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:text="No tienes cuenta," />
 
-    <TextView
-        android:id="@+id/ntc1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¿No tienes cuenta?"
-        style="@style/sty_text_aux"
-        android:layout_marginTop="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgot1" />
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="¡Únete!"
+            android:textColor="@color/black"
+            app:cornerRadius="5dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tdr1"
