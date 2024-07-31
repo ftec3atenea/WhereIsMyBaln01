@@ -35,7 +35,6 @@
         app:layout_constraintTop_toBottomOf="@+id/titulo1">
 
         <TextView
-            android:id="@+id/unouno11"
             style="@style/sty_text_aux"
             android:layout_gravity="start"
             android:layout_width="wrap_content"
@@ -44,7 +43,7 @@
             android:text="Ya tienes cuenta," />
 
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_login1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
@@ -55,7 +54,6 @@
             app:strokeWidth="1dp" />
 
         <TextView
-            android:id="@+id/dosdos22"
             style="@style/sty_text_aux"
             android:layout_gravity="start"
             android:layout_width="wrap_content"
@@ -64,7 +62,7 @@
             android:text="No tienes cuenta," />
 
         <Button
-            android:id="@+id/btn_signup"
+            android:id="@+id/btn_signup1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
@@ -77,7 +75,6 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tdr1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Todos los derechos reservados GR01"

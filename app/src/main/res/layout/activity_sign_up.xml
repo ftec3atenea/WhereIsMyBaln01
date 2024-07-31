@@ -8,14 +8,14 @@
     tools:context=".SignUp">
 
     <ImageView
-        android:id="@+id/fondo1"
+        android:id="@+id/fondo3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/fondeu" />
 
     <TextView
-        android:id="@+id/titulo2"
+        android:id="@+id/titulo3"
         style="@style/sty_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,10 +32,10 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo2">
+        app:layout_constraintTop_toBottomOf="@+id/titulo3">
 
         <EditText
-            android:id="@+id/input_user2"
+            android:id="@+id/input_user3"
             style="@style/sty_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:inputType="text" />
 
         <EditText
-            android:id="@+id/input_email2"
+            android:id="@+id/input_email3"
             style="@style/sty_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/input_age"
+            android:id="@+id/input_age3"
             style="@style/sty_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/input_pass2"
+            android:id="@+id/input_pass3"
             style="@style/sty_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,18 +67,23 @@
             android:inputType="textPassword" />
 
         <EditText
-            android:id="@+id/confirm_pass2"
+            android:id="@+id/confirm_pass3"
             style="@style/sty_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Confirme su Pass"
             android:inputType="textPassword" />
 
-        <Button
-            android:id="@+id/btn_signup"
+        <CheckBox
+            android:id="@+id/cb3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30sp"
+            android:text="Acepto TyC" />
+
+        <Button
+            android:id="@+id/btn_signup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:text="¡Únete!"
             android:textColor="@color/black"
@@ -87,7 +92,7 @@
             app:strokeWidth="1dp" />
 
         <TextView
-            android:id="@+id/ytc2"
+            android:id="@+id/ytc3"
             style="@style/sty_text_aux"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -97,7 +102,6 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tdr2"
         style="@style/sty_text_aux"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

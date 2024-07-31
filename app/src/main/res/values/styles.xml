@@ -25,6 +25,7 @@
     <style name="sty_text_aux">
         <item name="android:textAlignment">center</item>
         <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
 </resources>

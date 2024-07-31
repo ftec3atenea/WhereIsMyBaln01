@@ -6,36 +6,92 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/fondo1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/fondeu" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hola Equipo Landscape"
-        style="@style/sty_title"
-        app:layout_constraintBottom_toTopOf="@+id/btn_login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50sp"
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/btn_login"
+        <TextView
+            android:id="@+id/titulo1"
+            android:fontFamily="serif"
+            android:textSize="48sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Dónde está mi balneario?" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sty_text_aux"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:text="Ya tienes cuenta," />
+
+            <Button
+                android:id="@+id/btn_login1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="¡Empecemos!"
+                android:textColor="@color/black"
+                app:cornerRadius="5dp"
+                app:strokeColor="#000000"
+                app:strokeWidth="1dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sty_text_aux"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:text="No tienes cuenta," />
+
+            <Button
+                android:id="@+id/btn_signup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="¡Únete!"
+                android:textColor="@color/black"
+                app:cornerRadius="5dp"
+                app:strokeColor="#000000"
+                app:strokeWidth="1dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:text="¡Empecemos!"
-        android:textColor="@color/black"
-        app:cornerRadius="5dp"
+        android:text="Todos los derechos reservados GR01"
+        style="@style/sty_text_aux"
+        android:layout_margin="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
